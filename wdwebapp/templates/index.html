@@ -14,17 +14,19 @@
 </div>
 <div id="project-list">
 	<ul class="unstyled">
+		{% for project in projects %}
 		<li class="row-fluid">
 			<div class="span4 project-buttons btn-group">
-				<button type="button" class="btn"><i class="icon-thumbs-up"></i> 1000<br />Likes</button>
-				<button type="button" class="btn"><i class="icon-tasks"></i> 100%<br />Progress</button>
+				<button type="button" class="btn"><i class="icon-thumbs-up"></i> {{ project.like }}<br />Likes</button>
+				<button type="button" class="btn"><i class="icon-tasks"></i> {{ project.progress }}%<br />Progress</button>
 			</div>
 			<div class="span8">
-				<h3>Road repair in Kanto Tinio St.</h3>
-				<h6>POSTED BY: <span class="label label-info">MMDA</span></h6>
+				<h3>{{ project.title }}</h3>
+				<h6>POSTED BY: <span class="label label-info">{{ project.user }}</span></h6>
 			</div>
 			<div class="clearfix"></div>
 		</li>
+		{% endfor %}
 	</ul>
 </div>
 {% endblock %}
