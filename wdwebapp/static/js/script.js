@@ -50,5 +50,5 @@ function scrollfix (element) {
 }
 
 function scrollfixcontainer (element, parent) {
-	alert(element + ' ' + parent);
+	//alert(element + ' ' + parent);
 }
