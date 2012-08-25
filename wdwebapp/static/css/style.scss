@@ -125,8 +125,6 @@ div#mainpanel {
 	left: 0;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 
-	
-
 	header#mainheader {
 		background: #fff;
 		float: left;
@@ -210,6 +208,7 @@ div#map {
 	height: 100% !important;
 	position: fixed;
 	z-index: -999;
+	margin: 0;
 }
 
 
@@ -232,10 +231,6 @@ div#map {
 
 /* Portrait tablet to large desktop */
 @media (min-width: 979px) {
-
-	div[role="main"] {
-		margin-top: 60px;
-	}
 
 }
 

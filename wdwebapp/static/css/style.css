@@ -318,15 +318,13 @@ div#map {
   width: 100% !important;
   height: 100% !important;
   position: fixed;
-  z-index: -999; }
+  z-index: -999;
+  margin: 0; }
 
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Portrait tablet to large desktop */
-@media (min-width: 979px) {
-  div[role="main"] {
-    margin-top: 60px; } }
 /* Large desktop */
 .ir {
   display: block;
