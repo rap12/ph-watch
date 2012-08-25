@@ -1,4 +1,8 @@
-# Django settings for wdwebapp project.
+# Django settings for wdwebsite project.
+
+import os
+ROOT_PATH = os.path.dirname(__file__)
+PROJECT_ROOT =  os.path.dirname(os.path.realpath(__file__))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -24,7 +28,7 @@ DATABASES = {
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Asia/Taipei'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -45,12 +49,12 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static/media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = '/static/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -67,6 +71,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	os.path.join(ROOT_PATH, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -78,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '5t-8_h1sqj2a6v5*bpz5$wtzzf^34ihn-gi)sbn^y_*+e0l4xl'
+SECRET_KEY = 'p*!5k!wl698-@*s(gr9gpo8#=rqi%jrd(!!=-pkj6f7g*sd92b'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -94,18 +99,28 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'wdwebapp.urls'
+ROOT_URLCONF = 'wdwebsite.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wdwebapp.wsgi.application'
+WSGI_APPLICATION = 'wdwebsite.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	os.path.join(ROOT_PATH, 'templates'),
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+	'allauth.account.context_processors.account',
+	'allauth.socialaccount.context_processors.socialaccount', 
+	'django.contrib.auth.context_processors.auth',
+	'django.contrib.messages.context_processors.messages',
+	'django.core.context_processors.request',
+	'django.core.context_processors.static',
 )
 
 INSTALLED_APPS = (
@@ -115,10 +130,21 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'allauth',
+    'allauth.account',
+    #'allauth.socialaccount',
+    #'allauth.socialaccount.providers.facebook',
+    #'allauth.socialaccount.providers.google',
+    #'allauth.socialaccount.providers.github',
+    #'allauth.socialaccount.providers.linkedin',
+    #'allauth.socialaccount.providers.openid',
+    #'allauth.socialaccount.providers.twitter',
+    'emailconfirmation',
+	'south',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -149,3 +175,8 @@ LOGGING = {
         },
     }
 }
+
+try:
+	from localsettings import *
+except ImportError:
+	pass

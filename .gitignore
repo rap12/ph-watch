@@ -1,0 +1,10 @@
+# Python files
+*.pyc
+
+# Local settings
+wdwebsite/localsettings.py
+
+# Some Files
+.sass-cache/
+wdwebsite.sublime-project
+wdwebsite.sublime-workspace

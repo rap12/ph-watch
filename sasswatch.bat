@@ -1,0 +1,1 @@
+START cmd /c sass --watch wdwebsite/static/css/style.scss:wdwebsite/static/css/style.css
