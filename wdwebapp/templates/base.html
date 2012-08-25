@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load url from future %}
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -23,12 +24,15 @@
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<div role="main">
+		<div id="map">
+			{{ gmap.map }}
+		</div>
 		<div id="mainpanel">
 			<header id="mainheader">
 				<nav>
 					<div class="btn-group">
 						<button type="button" class="btn">View Projects</button>
-						<button type="button" class="btn">Propose a Project</button>
+						<a href="{% url 'add_project' %}" class="btn">Propose a Project</a>
 					</div>
 					<div class="btn-group pull-right">
 						<button type="button" class="btn">Sign in</button>
@@ -36,12 +40,15 @@
 					</div>
 				</nav>
 			</header>
-			<div class="clearfix"></div>
 			<div id="content">
-			{% block content %}
-			{% endblock %}
+				{% block content %}
+				{% endblock %}
 			</div>
-			{{ gmap.map }}
+		</div>
+		<div id="mainpaneltoggle">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
 	</div>
 

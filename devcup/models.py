@@ -6,6 +6,8 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 from django.db import models
 
+from widgets import *
+
 class Office(models.Model):
 	name = models.CharField(max_length=100)
 	initials = models.CharField(max_length=10)
