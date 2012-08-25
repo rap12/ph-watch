@@ -233,6 +233,27 @@ body {
   border-top-right-radius: 5px;
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.05); }
 
+div#mainpaneltoggle {
+  width: 40px;
+  height: 100px;
+  background: #2aa400;
+  text-align: center;
+  margin-top: -50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  content: ' ';
+  cursor: pointer;
+  box-shadow: inset -5px 0px 20px rgba(0, 0, 0, 0.1); }
+  div#mainpaneltoggle span {
+    width: 3px;
+    height: 30px;
+    background: #fafafa;
+    display: inline-block;
+    cursor: pointer;
+    margin: 35px 1px 0;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3); }
+
 div#mainpanel {
   width: 50%;
   height: 100%;
@@ -241,15 +262,6 @@ div#mainpanel {
   top: 0;
   left: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2); }
-  div#mainpanel :after {
-    width: 40px;
-    height: 100px;
-    background: #aaa;
-    margin-top: -50px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    content: ' '; }
   div#mainpanel header#mainheader {
     background: #fff;
     float: left;
@@ -296,12 +308,9 @@ div#mainpanel {
           border-bottom: 1px solid #ddd;
           box-shadow: 0 4px 4px -4px white; }
           div#mainpanel div#content div#project-list ul li div.project-buttons button {
+            width: 50%;
             font-size: 0.8em;
             padding: 10px auto; }
-          div#mainpanel div#content div#project-list ul li div.project-buttons button:first-child {
-            width: 45%; }
-          div#mainpanel div#content div#project-list ul li div.project-buttons button:last-child {
-            width: 55%; }
         div#mainpanel div#content div#project-list ul li:first-child {
           border-top: none; }
 

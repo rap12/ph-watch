@@ -6,10 +6,10 @@ $(document).ready(function(){
 		fileinputbootstrap();
 	}
 
-	// Posts
+	/*// Posts
 	$('li.post').each(function (index) {
 		scrollfixcontainer('.post-info', $(this).attr('class').split(' ')[1]);
-	});
+	});*/
 
 });
 
