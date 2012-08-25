@@ -92,143 +92,104 @@ body {
 	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-section.mainsection {
-	background: #fff;
-	margin-bottom: 20px;
-	border-radius: 6px;
-	box-shadow: 0 0 0 1px #ddd;
+div#mainpanel {
+	width: 50%;
+	height: 100%;
+	background: #fafafa;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 
-	div.mainsection-inner {
-		width: 100%;
+	:after {
+		width: 40px;
+		height: 100px;
+		background: #aaa;
+		margin-top: -50px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		content: ' ';
+	}
+
+	header#mainheader {
 		background: #fff;
-		border-bottom-left-radius: 6px;
-		border-bottom-right-radius: 6px;
-	}
-}
-
-div#posts-content {
-	padding: 20px;
-
-	ul {
-		padding: 0;
-	}
-}
-
-ul.nav-category {
-	background: #f6f6f6;
-	margin: 0;
-	padding: 0;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	-webkit-box-shadow: inset 0 1px 0 #fff;
-	box-shadow: inset 0 1px 0 #fff;
-
-	a {
-		margin: 0;
-		border-bottom: none;
-		border-right: 1px solid #ddd;
-		border-radius: 0 0 0 0;
-		padding: 20px 30px;
-	}
-	a:hover {
-		background: #fafafa;
-		border-top: 1px solid #fff;
-		border-bottom: none;
-		border-left: 1px solid #fafafa;
-		border-right: 1px solid #ddd;
-		border-radius: 0 0 0 0;
-		-webkit-box-shadow: inset 0 -1px 0 #ddd;
-		box-shadow: inset 0 -1px 0 #ddd;
-	}
-	li.active a {
-		border-top: none;
-		border-left: none;
-	}
-	li.active a:hover {
-		border-top: none;
-		border-left: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-	}
-	li:first-child a {
-		border-top-left-radius: 5px;
-	}
-	li:first-child a:hover {
-		border-top-left-radius: 5px;
-	}
-}
-
-aside#sidebar {
-	position: relative;
-}
-
-form#form-login {
-	input#inputUsername {
-	}
-	input#inputUsername, input#inputPassword {
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-}
-
-div#userpane {
-	div.user-head {
-		margin-bottom: 20px;
-	}
-	div.user-img img {
-		max-width: 65px;
-		max-height: 65px;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-	}
-	div.user-numbers {
-		div.span6 {
-			background: #fafafa;
-			padding: 10px;
-			border-radius: 5px;
-			border: 1px solid #ddd;
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-	}
-}
-
-div#uploadpane {
-	div.file * {
-		display: inline-block;
-	}
-	div.file input {
-		width: 70%;
 		float: left;
-	}
-	div.file button {
-		width: 24%;
-		float: right;
-	}
-}
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		left: 0; right: 0;
+		box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.1);
 
-.post {
-	.post-info {
-		margin-bottom: 20px;
-	}
-	.post-img {
-		text-align: center;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #ddd;
-		-webkit-box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.5), 0 10px 20px -10px rgba(0, 0, 0, 0.1);
-		box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.5), 0 10px 20px -10px rgba(0, 0, 0, 0.1);
+		div#logo {
+			float: left;
+		}
+		nav {
+			width: 100%;
+			height: auto;
+			display: block;
+			padding: 10px auto;
+			float: left;
 
-		img {
-			display: inline-block;
+			div:first-child {
+				margin-left: 100px;
+				float: left;
+			}
 		}
 	}
 
-	div.post-social {
-		div.btn-group {
-			margin-bottom: 10px;
+	div#content {
+		width: 100%;
+		background: #fafafa;
+		overflow-x: hidden;
+		overflow-y: auto;
+		margin-top: 50px;
 
-			button {
-				width: 50%;
+		div#sortpanel {
+			padding: 10px;
+
+			h3 {
+				margin-bottom: 10px;
+			}
+			div#sortbuttons {
+				height: 30px;
+
+				h6 {
+					line-height: 30px;
+					float: left;
+					margin-right: 10px;
+				}
+			}
+		}
+
+		div#project-list {
+			padding: 10px;
+
+			ul {
+				padding: 0;
+
+				li {
+					padding: 10px 0;
+					border-top: 1px solid #fff;
+					border-bottom: 1px solid #ddd;
+					box-shadow: 0 4px 4px -4px rgba(255, 255, 255, 1);
+
+					div.project-buttons {
+						button {
+							font-size: 0.8em;
+							padding: 10px auto;
+						}
+						button:first-child {
+							width: 45%;
+						}
+						button:last-child {
+							width: 55%;
+						}
+					}
+				}
+				li:first-child {
+					border-top: none;
+				}
 			}
 		}
 	}
@@ -236,12 +197,10 @@ div#uploadpane {
 
 
 
+
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-	ul.nav-category a {
-		padding: 10px 15px;
-	}
 
 }
 
