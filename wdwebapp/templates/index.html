@@ -1,41 +1,47 @@
 {% extends 'base.html' %}
 {% block content %}
-<section id="posts" class="mainsection span8">
-	<ul class="nav nav-tabs nav-category">
-		<li class="active"><a href="#">Mainit</a></li>
-		<li><a href="#">Nauuso</a></li>
-		<li><a href="#">Sinusundan</a></li>
-	</ul>
-	<div id="posts-inner" class="mainsection-inner">
-		<div id="posts-content">
-
-			<ul class="unstyled">
-				{% for post in posts %}
-				<li class="post post-{{ forloop.counter }}">
-					<div class="post-info row-fluid">
-						<div class="span9">
-							<h2>{{ post.title }}</h2>
-							<span><a href="#">{{ post.author }}</a></span>
-						</div>
-						<div class="span3 post-social">
-							<div class="btn-group" data-toggle="buttons-radio">
-								<button type="button" class="btn" style="width: 50%;">GUSTO</button>
-								<button type="button" class="btn" style="width: 50%;">AYAW</button>
-							</div>
-							<div>
-								Like | Tweet | Etc.
-							</div>
-						</div>
+<div id="mainpanel">
+			<header id="mainheader">
+				<nav>
+					<div class="btn-group">
+						<button type="button" class="btn">View Projects</button>
+						<button type="button" class="btn">Propose a Project</button>
 					</div>
-					<div class="post-img">
-						<img src="{{ MEDIA_URL }}{{ post.photo }}" />
+					<div class="btn-group pull-right">
+						<button type="button" class="btn">Sign in</button>
+						<button type="button" class="btn">Register</button>
 					</div>
-				</li>
-				<br/>
-				{% endfor %}
-			</ul>
-
+				</nav>
+			</header>
+			<div class="clearfix"></div>
+			<div id="content">
+				<div id="sortpanel">
+					<h3>Projects</h3>
+					<div id="sortbuttons">
+						<h6>SORT:</h6>
+						<div class="btn-group">
+							<button type="button" class="btn"><i class="icon-calendar"></i> DATE</button>
+							<button type="button" class="btn"><i class="icon-signal"></i> RATING</button>
+							<button type="button" class="btn"><i class="icon-check"></i> PROGRESS</button>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div id="project-list">
+					<ul class="unstyled">
+						<li class="row-fluid">
+							<div class="span4 project-buttons btn-group">
+								<button type="button" class="btn"><i class="icon-thumbs-up"></i> 1000<br />Likes</button>
+								<button type="button" class="btn"><i class="icon-tasks"></i> 100%<br />Progress</button>
+							</div>
+							<div class="span8">
+								<h3>Road repair in Kanto Tinio St.</h3>
+								<h6>POSTED BY: <span class="label label-info">MMDA</span></h6>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
 {% endblock %}
