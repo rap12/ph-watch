@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
+{% load url from future %}
 
 {% block content %}
 <div id="sortpanel">
 	<h3>Projects</h3>
 	<div id="sortbuttons">
-		<h6>SORT:</h6>
+		<h6>PROJECTS:</h6>
 		<div class="btn-group">
-			<button type="button" class="btn"><i class="icon-calendar"></i> DATE</button>
-			<button type="button" class="btn"><i class="icon-signal"></i> RATING</button>
-			<button type="button" class="btn"><i class="icon-check"></i> PROGRESS</button>
+			<a href="{% url 'home' %}" class="btn"><i class="icon-calendar"></i> User-Submitted</a>
+			<a href="{% url 'show_government_projects' %}" class="btn"><i class="icon-signal"></i> Government Projects</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -19,11 +19,19 @@
 		<li class="row-fluid">
 			<div class="span4 project-buttons btn-group">
 				<button type="button" class="btn"><i class="icon-thumbs-up"></i> {{ project.like }}<br />Likes</button>
+				{% if project.usercontributed = 0 %}
 				<button type="button" class="btn"><i class="icon-tasks"></i> {{ project.progress }}%<br />Progress</button>
+				{% else %}
+				<button type="button" class="btn"><i class="icon-thumbs-down"></i> {{ project.dislike }}<br />Dislikes</button>
+				{% endif %}
 			</div>
 			<div class="span8">
 				<h3>{{ project.title }}</h3>
+				{% if project.usercontributed = 1 %}
 				<h6>POSTED BY: <span class="label label-info">{{ project.user }}</span></h6>
+				{% else %}
+				<h6>OFFICES CONCERNED: {% for office in project.offices.all %}<span class="label label-info">{{ office.initials }}</span>{% endfor %}</h6>
+				{% endif %}
 			</div>
 			<div class="clearfix"></div>
 		</li>
