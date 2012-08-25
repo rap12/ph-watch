@@ -7,7 +7,9 @@ $(document).ready(function(){
 	}
 
 	$('div#mainpaneltoggle').click(function(){
-		
+		$('div#mainpanel').slideToggle('slow', function() {
+			// Animation complete
+		});
 	});
 
 	/*// Posts

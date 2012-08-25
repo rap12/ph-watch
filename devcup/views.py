@@ -8,7 +8,7 @@ from gmapi import maps
 from gmapi.forms.widgets import GoogleMap
 
 class MapForm(forms.Form):
-	map = forms.Field(widget=GoogleMap(attrs={'width':800, 'height':600}))
+	map = forms.Field(widget=GoogleMap(attrs={'width':1200, 'height':2000, 'style':'position: fixed !important; width: 100% !important;'}))
 
 def home(request):
 	offices = Office.objects.all()

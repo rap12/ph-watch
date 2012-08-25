@@ -2,7 +2,8 @@
 *.pyc
 
 # Local settings
-wdwebapp/localsettings.py
+*/localsettings.py
+localsettings.py
 
 # Some Files
 .sass-cache/
