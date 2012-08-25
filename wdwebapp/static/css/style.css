@@ -314,7 +314,7 @@ div#mainpanel {
         div#mainpanel div#content div#project-list ul li:first-child {
           border-top: none; }
 
-div#map {
+div#map, div.google-map {
   width: 100% !important;
   height: 100% !important;
   position: fixed;
