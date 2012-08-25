@@ -4,6 +4,7 @@
 # Local settings
 */localsettings.py
 localsettings.py
+wdwebapp/localsettings.py
 
 # Some Files
 .sass-cache/
