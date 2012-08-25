@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'devcup.views.home', name='home'),
-    # url(r'^wdwebapp/', include('wdwebapp.foo.urls')),
+    url(r'^', include('devcup.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

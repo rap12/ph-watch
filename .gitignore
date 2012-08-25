@@ -6,5 +6,8 @@ wdwebapp/localsettings.py
 
 # Some Files
 .sass-cache/
-wdwebapp.sublime-project
-wdwebapp.sublime-workspace
+wdwebsite.sublime-project
+wdwebsite.sublime-workspace
+
+# Migration folders
+devcup/migrations

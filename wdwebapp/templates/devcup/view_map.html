@@ -1,0 +1,8 @@
+{% extends 'devcup/base.html' %}
+{% load gmap %}
+{% block content %}
+{{ office.address|show }}
+{{ office.x }}
+{{ office.y }}
+{% gmap_includes %}
+{% endblock %}
