@@ -7,7 +7,7 @@ from models import Office, Project
 from forms import ProjectForm
 
 from gmapi import maps
-#from gmapi.forms.widgets import GoogleMap
+from gmapi.forms.widgets import GoogleMap
 
 from widgets import GoogleMap
 
