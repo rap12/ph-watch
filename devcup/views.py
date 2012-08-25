@@ -36,7 +36,7 @@ def home(request):
 		maps.event.addListener(marker, 'mouseover', 'myobj.markerOver')
 		maps.event.addListener(marker, 'mouseout', 'myobj.markerOut')
 		info = maps.InfoWindow({
-			'content': '<h3>%s</h3><br><h4>Budget: <h4>P%s<br><h4>Start Date: <h4>%s<br><h4>End Date: <h4>%s<br>' % (project.title, intcomma(project.budget), project.start_date.strftime('%B %d %Y'), project.end_date.strftime('%B %d %Y')),
+			'content': '<h3>%s</h3>' % project.title,
 			'disableAutoPan': True
 		})
 		info.open(gmap, marker)
