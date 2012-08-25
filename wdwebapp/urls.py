@@ -16,4 +16,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 	
 	url(r'^admin/gmapsfield/admin/(?P<file>.*)$', 'gmapsfield.views.serve'),
+
+	
+    url(r'^accounts/', include('allauth.urls')),
 )
