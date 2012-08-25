@@ -1,15 +1,11 @@
 from django import forms
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-
 from django.contrib.humanize.templatetags.humanize import intcomma
-
-
 from models import Office, Project
 from forms import ProjectForm
 
 from gmapi import maps
-#from gmapi.forms.widgets import GoogleMap
 
 from widgets import GoogleMap
 
@@ -30,6 +26,8 @@ def home(request):
 	
 	form = MapForm(initial={'map': gmap})
 	
+	print projects
+	
 	for project in projects:
 		marker = maps.Marker(opts = {
 			'map': gmap,
@@ -48,7 +46,12 @@ def home(request):
 	
 	
 def add_project(request):
-	form = ProjectForm()
+	if request.method == 'GET':
+		form = ProjectForm()
+	elif request.method == 'POST':
+		form = ProjectForm(request.POST)
+		if form.is_valid():
+			form.save()
 	return render_to_response ('devcup/add_project.html', {
 		'form': form,
 	}, context_instance = RequestContext(request))

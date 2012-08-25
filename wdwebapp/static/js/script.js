@@ -8,11 +8,11 @@ $(document).ready(function(){
 
 	$('div#mainpaneltoggle').click(function(){
 		$('div#mainpanel').animate({
-			left: parseInt($('div#mainpanel').css('left'), 10) == 0 ? -$('div#mainpanel').outerWidth() : 0
+			'left': parseInt($('div#mainpanel').css('left'), 10) == 0 ? -$('div#mainpanel').outerWidth() : 0
 		});
 
 		$('div#mainpaneltoggle').animate({
-			left: $('div#mainpaneltoggle').css('left') == '50%' ? '0%' : '50%'
+			'left': $('div#mainpaneltoggle').css('left') == '50%' ? '0%' : '50%'
 		});
 	});
 
