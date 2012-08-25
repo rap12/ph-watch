@@ -2,13 +2,16 @@ from django import forms
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
+from forms import ProjectForm
 from models import Office
 
 from gmapi import maps
-from gmapi.forms.widgets import GoogleMap
+#from gmapi.forms.widgets import GoogleMap
+
+from widgets import GoogleMap
 
 class MapForm(forms.Form):
-	map = forms.Field(widget=GoogleMap(attrs={'width':800, 'height':600}))
+	map = forms.Field(widget=GoogleMap(attrs={'width':'100%', 'height':'100%'}))
 
 def home(request):
 	offices = Office.objects.all()
@@ -38,4 +41,10 @@ def home(request):
 		info.open(gmap, marker)
 	return render_to_response ('index.html', {
 		'gmap': form,
+	}, context_instance = RequestContext(request))
+	
+def add_project(request):
+	form = ProjectForm()
+	return render_to_response ('devcup/add_project.html', {
+		'form': form,
 	}, context_instance = RequestContext(request))
