@@ -1,0 +1,733 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"fileinputbootstrap"
+			],
+			[
+				"hm",
+				"html"
+			],
+			[
+				"border-left",
+				"border-left"
+			],
+			[
+				"border",
+				"border-bottom-left-radius	zen:css_properties"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"text-sha",
+				"text-shadow	zen:css_properties"
+			],
+			[
+				"border-radius",
+				"border-top-left-radius"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"background-siz",
+				"background-size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wdwebapp/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 2136,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "wdwebapp/static/css/style.scss",
+			"settings":
+			{
+				"buffer_size": 5431,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"zen as",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"repository",
+				"Package Control: Add Repository"
+			],
+			[
+				"reposi",
+				"Package Control: Add Repository"
+			],
+			[
+				"package con",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"zentyp",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"ss javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"zen",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"ss ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"ss javad",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Zen Coding: ",
+				"Zen Coding: Zen as you type"
+			],
+			[
+				"enable p",
+				"Package Control: Enable Package"
+			],
+			[
+				"syntax php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set s css",
+				"Set Syntax: SCSS"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet",
+				"Snippet: html"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/wdwebapp/localsettings.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/devcup/views.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/wdwebapp/templates/base.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/gitshell.bat",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/runserver.bat",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebapp/.gitignore",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/css/bootstrap.css",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/js/script.js",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/urls.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/base.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/js/bootstrap-button.js",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/header.html",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/js/script.js",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebapp/models.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/css/style.scss",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/index.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebapp/tests.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebapp/views.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebapp/admin.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/__init__.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/localsettings.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/settings.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/views.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/wsgi.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/sidebar.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/upload.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/manage.py",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/css/style.css",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/css/style.scss",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/css/style.css~HEAD",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/static/css/style.scss~HEAD",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/css/bootstrap.css",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite - Copy/templates/index.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/posts.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/js/bootstrap-collapse.js",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/js/bootstrap-collapse",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/wsgi.pyc",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/account/base.html",
+		"/C/Users/Admin/Documents/Work/Websites/WebGeek DevCup/wdwebsite/wdwebsite/templates/css/style.css",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/style.scss",
+		"/C/xampp/apache/conf/httpd.conf",
+		"/C/Users/Admin/Desktop/test.rb",
+		"/C/xampp/htdocs/usg/wp-content/themes/twentyeleven/style.css",
+		"/C/xampp/htdocs/usg/wp-content/themes/usg/header.php",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/API (LETS REMOVE ALL THESE OLD FILES NA HIHI)/FeLex/src/felex/database/Database.java",
+		"/C/xampp/htdocs/usg/wp-content/themes/usg/top.php",
+		"/C/xampp/htdocs/usg/wp-content/themes/usg/template_askusg.php",
+		"/C/xampp/htdocs/usg/wp-content/themes/usg/single.php",
+		"/C/xampp/htdocs/usg/wp-content/themes/usg/footer.php",
+		"/C/xampp/htdocs/usg/wp-content/themes/twentyeleven/content-single.php",
+		"/C/xampp/htdocs/usg/wp-content/themes/twentyeleven/single.php",
+		"/C/xampp/htdocs/tugs/_tugs.sublime-project",
+		"/C/xampp/htdocs/tugs/404.html",
+		"/C/xampp/htdocs/tugs/includes/bottom.php",
+		"/C/xampp/htdocs/tugs/includes/footer.php",
+		"/C/xampp/htdocs/tugs/fe2012.php",
+		"/C/xampp/htdocs/tugs/a/config.php",
+		"/C/Users/Admin/Desktop/install-ex.php",
+		"/C/xampp/htdocs/tugs/.htaccess",
+		"/C/xampp/htdocs/tugs/a/.htaccess",
+		"/C/xampp/htdocs/tugs/a/config_.php",
+		"/C/xampp/htdocs/tugs/includes/header.php",
+		"/C/xampp/htdocs/tugs/elections.php",
+		"/C/xampp/htdocs/tugs/includes/top.php",
+		"/C/xampp/htdocs/tugs/humans.txt",
+		"/C/xampp/htdocs/tugs/js/script.js",
+		"/C/xampp/htdocs/tugs/contact.php",
+		"/C/xampp/htdocs/tugs/css/style.css",
+		"/C/xampp/htdocs/tugs/robots.txt",
+		"/C/xampp/htdocs/tugs/calendar.php",
+		"/C/xampp/htdocs/tugs/single.php",
+		"/C/xampp/htdocs/tugs/news.php",
+		"/C/xampp/htdocs/tugs/includes/sidebar-news.php",
+		"/C/xampp/htdocs/tugs/index.php",
+		"/C/xampp/htdocs/tugs/ge2011/images/home/index.php",
+		"/C/xampp/htdocs/tugs/includes/spoa.php",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_excel2015.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_focus2012.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_67theng.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_blaze2015.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_fast2012.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_edge2012.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/SPOA/SPOA/spoa_catch2t16.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_excel2015.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_focus2012.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_67theng.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_blaze2015.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_fast2012.txt",
+		"/C/Users/Admin/Desktop/batchandspoatxt/Batch/Batch/batch_edge2012.txt",
+		"/C/xampp/htdocs/tugs/functions.php",
+		"/C/Users/Admin/Desktop/spoa.txt",
+		"/C/Users/Admin/Desktop/batch.txt",
+		"/C/xampp/htdocs/tugs/ge2012/footer.php",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Crawler.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Amazon.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Functions.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Product.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Connection.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Website.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/WebsiteActions.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Manuals/Main.java",
+		"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Manuals/Category.java",
+		"/C/xampp/htdocs/tugs/.htaccess_pwd",
+		"/C/xampp/htdocs/tugs/.htpasswd",
+		"/C/xampp/htdocs/tugs/includes/top-single.php",
+		"/C/xampp/htdocs/tugs/includes/top-fe.php",
+		"/C/xampp/htdocs/tugs/readme.md",
+		"/C/xampp/htdocs/tugs/ge2012/header.php",
+		"/C/xampp/htdocs/tugs/ge2012/functions.php",
+		"/C/xampp/htdocs/tugs/ge2012/solo.php",
+		"/C/xampp/htdocs/tugs/ge2012/.htaccess",
+		"/C/xampp/htdocs/tugs/ge2012/styles/main.css",
+		"/C/xampp/htdocs/tugs/ge2012/index.php",
+		"/C/xampp/htdocs/tugs/ge2012/vision.php",
+		"/C/xampp/htdocs/tugs/ge2012/style.css",
+		"/C/xampp/htdocs/tugs/ge2012/stands.php",
+		"/C/xampp/htdocs/tugs/ge2012/header_home.php",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/footer.php",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/header.php",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/template_home.php",
+		"/C/Users/Admin/Desktop/jquery-image-slider-plugin-with-cool-transition-effects/source/js/quake.slider.js",
+		"/C/Users/Admin/Desktop/jquery-image-slider-plugin-with-cool-transition-effects/source/js/quake.slider-min.js",
+		"/C/Users/Admin/Desktop/jquery-image-slider-plugin-with-cool-transition-effects/source/css/quake.slider.css",
+		"/C/xampp/htdocs/azkals/wp-content/themes/azkals/category.php",
+		"/C/Program Files (x86)/Eclipse/eclipse.ini",
+		"/C/xampp/htdocs/nokia/wp-content/themes/nokiamc/functions.php",
+		"/C/xampp/htdocs/nokia/wp-content/themes/nokiamc/style.css",
+		"/C/xampp/htdocs/nokia/wp-content/themes/nokiamc/404.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"wdwebsite",
+			"60px",
+			"span6",
+			"span",
+			"h5",
+			"li",
+			"10px",
+			"h3",
+			"scrollmargin",
+			"div",
+			"6px",
+			"5px",
+			"width: 100%",
+			".controls",
+			"file",
+			"h4",
+			"h2",
+			":hover",
+			"important",
+			"well-",
+			"40px",
+			".navbar {",
+			"navbar-fixed-top",
+			".navbar ",
+			", .navbar",
+			".navbar {",
+			".navbar ",
+			">\n",
+			"header",
+			"	<script src=\"js/bootstrap.js\"></script>\n",
+			">\n",
+			"about",
+			"rewriterule",
+			"expires",
+			"Options All -Indexes",
+			"0",
+			";\n",
+			"load_twitter",
+			"ge2012",
+			"vide",
+			"button",
+			"255",
+			"0",
+			"255",
+			"0",
+			"section",
+			"photo",
+			"div#fe2012 section div.candidate div.position {\n",
+			"{\n",
+			"done()",
+			"cache",
+			"cach",
+			"passwd",
+			"-->\n",
+			"big",
+			"4",
+			"3",
+			"tugs",
+			"rewrite",
+			"-images",
+			"script",
+			"<script src=\"<?php bloginfo('template_directory'); ?>/js/libs/tinycarousel.min.js\"></script>\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wdwebapp/templates/base.html",
+					"settings":
+					{
+						"buffer_size": 2136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1421,
+								1421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wdwebapp/static/css/style.scss",
+					"settings":
+					{
+						"buffer_size": 5431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3569,
+								3569
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1005.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"scss",
+				"wdwebapp/static/css/style.scss"
+			],
+			[
+				"locals",
+				"wdwebapp/localsettings.py"
+			],
+			[
+				"local",
+				"wdwebapp/localsettings.py"
+			],
+			[
+				"view",
+				"devcup/views.py"
+			],
+			[
+				"base",
+				"wdwebapp/templates/base.html"
+			],
+			[
+				"views",
+				"devcup/views.py"
+			],
+			[
+				"base.",
+				"wdwebapp/templates/base.html"
+			],
+			[
+				".bat",
+				"runserver.bat"
+			],
+			[
+				"gitsh",
+				"gitshell.bat"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"scrip",
+				"wdwebsite/static/js/script.js"
+			],
+			[
+				"bootst",
+				"wdwebsite/static/css/bootstrap.css"
+			],
+			[
+				"side",
+				"wdwebsite/templates/sidebar.html"
+			],
+			[
+				"urls",
+				"wdwebsite/urls.py"
+			],
+			[
+				"header",
+				"wdwebsite/templates/header.html"
+			],
+			[
+				"base.ht",
+				"wdwebsite/templates/base.html"
+			],
+			[
+				"index",
+				"wdwebsite/templates/index.html"
+			],
+			[
+				"sideb",
+				"wdwebsite/templates/sidebar.html"
+			],
+			[
+				"scripts",
+				"wdwebsite/static/js/script.js"
+			],
+			[
+				"models",
+				"wdwebapp/models.py"
+			],
+			[
+				"boot",
+				"static/css/bootstrap.css"
+			],
+			[
+				"boots",
+				"static/css/bootstrap.css"
+			],
+			[
+				"upload",
+				"templates/upload.html"
+			],
+			[
+				"base.html",
+				"templates/base.html"
+			],
+			[
+				"ur",
+				"urls.py"
+			],
+			[
+				"url",
+				"urls.py"
+			],
+			[
+				"style",
+				"templates/css/style.scss"
+			],
+			[
+				"botstrap",
+				"templates/css/bootstrap.css"
+			],
+			[
+				"style.css",
+				"wp-content/themes/twentyeleven/style.css"
+			],
+			[
+				"single",
+				"wp-content/themes/usg/single.php"
+			],
+			[
+				"footer",
+				"wp-content/themes/usg/footer.php"
+			],
+			[
+				"content-single",
+				"wp-content/themes/twentyeleven/content-single.php"
+			],
+			[
+				"fe2",
+				"fe2012.php"
+			],
+			[
+				"htaccess",
+				".htaccess"
+			],
+			[
+				"elec",
+				"elections.php"
+			],
+			[
+				"top",
+				"includes/top.php"
+			],
+			[
+				"humans",
+				"humans.txt"
+			],
+			[
+				"robo",
+				"robots.txt"
+			],
+			[
+				"contact",
+				"contact.php"
+			],
+			[
+				"electi",
+				"elections.php"
+			],
+			[
+				"calenda",
+				"calendar.php"
+			],
+			[
+				"news",
+				"news.php"
+			],
+			[
+				"sidebar",
+				"includes/sidebar-news.php"
+			],
+			[
+				"home",
+				"ge2011/images/home/index.php"
+			],
+			[
+				"bottom",
+				"includes/bottom.php"
+			],
+			[
+				"fe20",
+				"fe2012.php"
+			],
+			[
+				"websit",
+				"/C/Users/Admin/Documents/My Dropbox/MACK!/THS-ST3/Felex Builder/src/crawler/Website.java"
+			],
+			[
+				"functio",
+				"functions.php"
+			],
+			[
+				"functions",
+				"functions.php"
+			],
+			[
+				"electio",
+				"elections.php"
+			],
+			[
+				"",
+				"template_home.php"
+			],
+			[
+				"styles",
+				"style.scss"
+			],
+			[
+				"func",
+				"functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Admin/Desktop/nokia.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

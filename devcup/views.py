@@ -11,10 +11,6 @@ class MapForm(forms.Form):
 	map = forms.Field(widget=GoogleMap(attrs={'width':800, 'height':600}))
 
 def home(request):
-	return render_to_response ('index.html', {
-	}, context_instance = RequestContext(request))
-	
-def view_map(request):
 	offices = Office.objects.all()
 	
 	gmap = maps.Map(opts = {
@@ -40,7 +36,6 @@ def view_map(request):
 			'disableAutoPan': True
 		})
 		info.open(gmap, marker)
-	
-	return render_to_response ('devcup/view_map.html', {
+	return render_to_response ('index.html', {
 		'gmap': form,
 	}, context_instance = RequestContext(request))
