@@ -8,7 +8,7 @@ from gmapi import maps
 from gmapi.forms.widgets import GoogleMap
 
 class MapForm(forms.Form):
-	map = forms.Field(widget=GoogleMap(attrs={'width':510, 'height':510}))
+	map = forms.Field(widget=GoogleMap(attrs={'width':800, 'height':600}))
 
 def home(request):
 	return render_to_response ('index.html', {
@@ -16,20 +16,31 @@ def home(request):
 	
 def view_map(request):
 	offices = Office.objects.all()
-	forms = []
+	
+	gmap = maps.Map(opts = {
+		'center': maps.LatLng(14, 121),
+		'mapTypeId': maps.MapTypeId.ROADMAP,
+		'zoom': 10,
+		'mapTypeControlOptions': {
+			 'style': maps.MapTypeControlStyle.DROPDOWN_MENU
+		},
+	})
+	
+	form = MapForm(initial={'map': gmap})
 	
 	for office in offices:
-		gmap = maps.Map(opts = {
-			'center': maps.LatLng(office.x(), office.y()),
-			'mapTypeId': maps.MapTypeId.ROADMAP,
-			'zoom': 3,
-			'mapTypeControlOptions': {
-				 'style': maps.MapTypeControlStyle.DROPDOWN_MENU
-			},
+		marker = maps.Marker(opts = {
+			'map': gmap,
+			'position': maps.LatLng(office.x(), office.y()),
 		})
-		form = MapForm(initial={'map': gmap})
-		forms.append(form)
+		maps.event.addListener(marker, 'mouseover', 'myobj.markerOver')
+		maps.event.addListener(marker, 'mouseout', 'myobj.markerOut')
+		info = maps.InfoWindow({
+			'content': 'Hello!',
+			'disableAutoPan': True
+		})
+		info.open(gmap, marker)
 	
 	return render_to_response ('devcup/view_map.html', {
-		'forms': forms,
+		'gmap': form,
 	}, context_instance = RequestContext(request))

@@ -21,6 +21,7 @@
 <body>
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 	<div role="main">
+		{% block content %}
 		<div id="mainpanel">
 			<header id="mainheader">
 				<nav>
@@ -65,7 +66,7 @@
 				</div>
 			</div>
 		</div>
->>>>>>> f7c732ec109b134ac4d249e5a404cf5249d6b3c3
+		{% endblock %}
 	</div>
 
 	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
