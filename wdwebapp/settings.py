@@ -1,4 +1,4 @@
-# Django settings for wdwebsite project.
+# Django settings for wdwebapp project.
 
 import os
 ROOT_PATH = os.path.dirname(__file__)
@@ -102,10 +102,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'wdwebsite.urls'
+ROOT_URLCONF = 'wdwebapp.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wdwebsite.wsgi.application'
+WSGI_APPLICATION = 'wdwebapp.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     #'allauth.socialaccount.providers.openid',
     #'allauth.socialaccount.providers.twitter',
     'emailconfirmation',
+	'gmapsfield',
 	'south',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
