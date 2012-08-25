@@ -1,3 +1,41 @@
 {% extends 'base.html' %}
 {% block content %}
+<section id="posts" class="mainsection span8">
+	<ul class="nav nav-tabs nav-category">
+		<li class="active"><a href="#">Mainit</a></li>
+		<li><a href="#">Nauuso</a></li>
+		<li><a href="#">Sinusundan</a></li>
+	</ul>
+	<div id="posts-inner" class="mainsection-inner">
+		<div id="posts-content">
+
+			<ul class="unstyled">
+				{% for post in posts %}
+				<li class="post post-{{ forloop.counter }}">
+					<div class="post-info row-fluid">
+						<div class="span9">
+							<h2>{{ post.title }}</h2>
+							<span><a href="#">{{ post.author }}</a></span>
+						</div>
+						<div class="span3 post-social">
+							<div class="btn-group" data-toggle="buttons-radio">
+								<button type="button" class="btn" style="width: 50%;">GUSTO</button>
+								<button type="button" class="btn" style="width: 50%;">AYAW</button>
+							</div>
+							<div>
+								Like | Tweet | Etc.
+							</div>
+						</div>
+					</div>
+					<div class="post-img">
+						<img src="{{ MEDIA_URL }}{{ post.photo }}" />
+					</div>
+				</li>
+				<br/>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+</section>
 {% endblock %}

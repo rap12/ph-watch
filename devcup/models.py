@@ -12,10 +12,16 @@ class Office(models.Model):
 	contact_no = models.CharField(max_length=20)
 	email = models.EmailField()
 	head = models.CharField(max_length=100)
-	address = GoogleMapsField()
+	address = GoogleMapsField(default="{ coordinates: [14.6001, 120.9843], zoom: 10, size: [400, 200] }")
 	
 	def __unicode__(self):
 		return self.name
+		
+	def x(self):
+		return self.address.coordinates[0]
+		
+	def y(self):
+		return self.address.coordinates[1]
 	
 admin.site.register(Office)
 
@@ -28,7 +34,7 @@ class Project(models.Model):
 	progress = models.IntegerField()
 	start_date = models.DateTimeField()
 	end_date = models.DateTimeField()
-	address = GoogleMapsField()
+	address = GoogleMapsField(default="{ coordinates: [14.6001, 120.9843], zoom: 10, size: [400, 200] }")
 	
 	def __unicode__(self):
 		return self.title
