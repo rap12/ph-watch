@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'wdwebapp.views.home', name='home'),
+    url(r'^$', 'devcup.views.home', name='home'),
     # url(r'^wdwebapp/', include('wdwebapp.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
