@@ -8,3 +8,6 @@ wdwebsite/localsettings.py
 .sass-cache/
 wdwebsite.sublime-project
 wdwebsite.sublime-workspace
+
+# Migration folders
+devcup/migrations
