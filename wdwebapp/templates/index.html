@@ -1,58 +1,31 @@
 {% extends 'base.html' %}
 
-{% block maincontent %}
-<div id="map">
-	<!-- {% load gmap %} -->
-	<!-- {{ office.address|show }} -->
-	{{ gmap.map }}
-	<!-- {% gmap_includes %} -->
-</div>
-<div id="mainpanel">
-	<header id="mainheader">
-		<nav>
-			<div class="btn-group">
-				<button type="button" class="btn">View Projects</button>
-				<button type="button" class="btn">Propose a Project</button>
-			</div>
-			<div class="btn-group pull-right">
-				<button type="button" class="btn">Sign in</button>
-				<button type="button" class="btn">Register</button>
-			</div>
-		</nav>
-	</header>
-	<div id="content">
-		<div id="sortpanel">
-			<h3>Projects</h3>
-			<div id="sortbuttons">
-				<h6>SORT:</h6>
-				<div class="btn-group">
-					<button type="button" class="btn"><i class="icon-calendar"></i> DATE</button>
-					<button type="button" class="btn"><i class="icon-signal"></i> RATING</button>
-					<button type="button" class="btn"><i class="icon-check"></i> PROGRESS</button>
-				</div>
-				<div class="clearfix"></div>
-			</div>
+{% block content %}
+<div id="sortpanel">
+	<h3>Projects</h3>
+	<div id="sortbuttons">
+		<h6>SORT:</h6>
+		<div class="btn-group">
+			<button type="button" class="btn"><i class="icon-calendar"></i> DATE</button>
+			<button type="button" class="btn"><i class="icon-signal"></i> RATING</button>
+			<button type="button" class="btn"><i class="icon-check"></i> PROGRESS</button>
 		</div>
-		<div id="project-list">
-			<ul class="unstyled">
-				<li class="row-fluid">
-					<div class="span3 project-buttons btn-group">
-						<button type="button" class="btn"><i class="icon-thumbs-up"></i> 1000<br />Likes</button>
-						<button type="button" class="btn"><i class="icon-tasks"></i> 100%<br />Progress</button>
-					</div>
-					<div class="span9">
-						<h3>Road repair in Kanto Tinio St.</h3>
-						<h6>POSTED BY: <span class="label label-info">MMDA</span></h6>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-			</ul>
-		</div>
+		<div class="clearfix"></div>
 	</div>
 </div>
-<div id="mainpaneltoggle">
-	<span></span>
-	<span></span>
-	<span></span>
+<div id="project-list">
+	<ul class="unstyled">
+		<li class="row-fluid">
+			<div class="span3 project-buttons btn-group">
+				<button type="button" class="btn"><i class="icon-thumbs-up"></i> 1000<br />Likes</button>
+				<button type="button" class="btn"><i class="icon-tasks"></i> 100%<br />Progress</button>
+			</div>
+			<div class="span9">
+				<h3>Road repair in Kanto Tinio St.</h3>
+				<h6>POSTED BY: <span class="label label-info">MMDA</span></h6>
+			</div>
+			<div class="clearfix"></div>
+		</li>
+	</ul>
 </div>
 {% endblock %}
