@@ -92,6 +92,30 @@ body {
 	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
+div#mainpaneltoggle {
+	width: 40px;
+	height: 100px;
+	background: #2aa400;
+	text-align: center;
+	margin-top: -50px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	content: ' ';
+	cursor: pointer;
+	box-shadow: inset -5px 0px 20px rgba(0, 0, 0, 0.1);
+
+	span {
+		width: 3px;
+		height: 30px;
+		background: #fafafa;
+		display: inline-block;
+		cursor: pointer;
+		margin: 35px 1px 0;
+		box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+	}
+}
+
 div#mainpanel {
 	width: 50%;
 	height: 100%;
@@ -101,16 +125,7 @@ div#mainpanel {
 	left: 0;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 
-	:after {
-		width: 40px;
-		height: 100px;
-		background: #aaa;
-		margin-top: -50px;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		content: ' ';
-	}
+	
 
 	header#mainheader {
 		background: #fff;
@@ -176,14 +191,9 @@ div#mainpanel {
 
 					div.project-buttons {
 						button {
+							width: 50%;
 							font-size: 0.8em;
 							padding: 10px auto;
-						}
-						button:first-child {
-							width: 45%;
-						}
-						button:last-child {
-							width: 55%;
 						}
 					}
 				}
