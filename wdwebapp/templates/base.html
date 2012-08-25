@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
 	{% block css %}
 	{% endblock %}
 
@@ -26,6 +27,8 @@
 	<div role="main" class="container">
 
 		<div class="content row">
+			{% include 'sidebar.html' %}
+
 			{% block content %}
 			{% endblock %}
 		</div>

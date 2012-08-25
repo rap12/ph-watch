@@ -1,0 +1,79 @@
+<aside id="sidebar" class="span4">
+
+	<!-- <div class="alert alert-success">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		Maligayang pagbalik! Tawa na tayo!
+	</div> -->
+
+	{% if not user.is_authenticated %}
+
+	<div class="well">
+		<div class="wellheader">Mag-sign in na!</div>
+		<div class="alert alert-info">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			Hoy! Mag-sign in ka nga!
+		</div>
+		<form action="" id="form-login row-fluid">
+			<div class="controls row-fluid">
+				<input type="text" placeholder="Username" id="inputUsername" class="span12" />
+				<input type="password" placeholder="Password" id="inputPassword" class="span12" />
+			</div>
+			<button class="btn btn-primary">Pumasok</button>
+			<button class="btn">Magparehistro</button>
+		</form>
+
+	</div>
+
+	{% else %}
+
+	<div class="well">
+		<div class="wellheader">Tungkol Sa'yo</div>
+		<div id="userpane">
+			<div class="user-head row-fluid">
+				<div class="user-img span3">
+					<img src="http://en.gravatar.com/userimage/21642904/9cadff2685eafbd1f9bb7897f15a4c53.png?size=200" />
+				</div>
+				<div class="span9">
+					<h3>Antonn Esquivel</h3>
+					<h2><a href="#" class="btn">Ayusin ang iyong profile</a><h2>
+				</div>
+			</div>
+			<div class="user-numbers">
+				<div class="row-fluid">
+					<div class="span6">Posts: <span class="badge badge-success pull-right">2</span></div>
+					<div class="span6">Likes: <span class="badge pull-right">2</span></div>
+				</div>
+				<div class="row-fluid">
+					<div class="span6">Following: <span class="badge badge-warning pull-right">2</span></div>
+					<div class="span6">Followers: <span class="badge badge-info pull-right">2</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="well">
+		<div class="wellheader">Magsumite ng Kagaguhan</div>
+		<div id="uploadpane">
+			<form>
+				<div class="controls row-fluid">
+					<input type="text" placeholder="Titulo" id="uploadtitle" class="span12" />
+				</div>
+				<div class="controls">
+					<input type="file" id="file" class="hidden">
+					<div class="file controls row-fluid">
+						<input type="text" name="filename" placeholder="Mamili ng imahe..." id="filename" class="input" />
+						<button id="fileselectbutton" class="btn">Pumili</button>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary">Ipadala!</button>
+				<button type="submit" class="btn">I-reset</button>
+			</form>
+		</div>
+	</div>
+
+	{% endif %}
+
+	<footer>
+		&copy; 2012. Footer.
+	</footer>
+</aside>

@@ -2,9 +2,9 @@
 *.pyc
 
 # Local settings
-wdwebsite/localsettings.py
+wdwebapp/localsettings.py
 
 # Some Files
 .sass-cache/
-wdwebsite.sublime-project
-wdwebsite.sublime-workspace
+wdwebapp.sublime-project
+wdwebapp.sublime-workspace
