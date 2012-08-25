@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css">
-	<!-- {% block css %}
-	{% endblock %} -->
+	{% block css %}
+	{% endblock %}
 
 	<script src="{{ STATIC_URL }}js/libs/modernizr-2.5.3.min.js"></script>
 </head>
@@ -23,6 +23,12 @@
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<div role="main">
+		<div id="map">
+			<!-- {% load gmap %} -->
+			<!-- {{ office.address|show }} -->
+			{{ gmap.map }}
+			<!-- {% gmap_includes %} -->
+		</div>
 		<div id="mainpanel">
 			<header id="mainheader">
 				<nav>
@@ -82,8 +88,18 @@
 	<script src="{{ STATIC_URL }}js/bootstrap-button.js"></script>
 	<script src="{{ STATIC_URL }}js/script.js"></script>
 	
-	<!-- {% block scripts %}
-	{% endblock %} -->
+	{% block scripts %}
+	{% endblock %}
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}gmapi/js/jquery.gmapi.js"></script>	
+	<script type="text/javascript">
+		window.myobj = {
+			markerOver: function() { this.openInfoWindow(); },
+			markerOut: function() { this.closeInfoWindow(); }
+		};
+	</script>
 
 	<script>
 		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

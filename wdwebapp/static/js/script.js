@@ -6,6 +6,10 @@ $(document).ready(function(){
 		fileinputbootstrap();
 	}
 
+	$('div#mainpaneltoggle').click(function(){
+		
+	});
+
 	/*// Posts
 	$('li.post').each(function (index) {
 		scrollfixcontainer('.post-info', $(this).attr('class').split(' ')[1]);
