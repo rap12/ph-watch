@@ -36,7 +36,7 @@ def home(request):
 		maps.event.addListener(marker, 'mouseover', 'myobj.markerOver')
 		maps.event.addListener(marker, 'mouseout', 'myobj.markerOut')
 		info = maps.InfoWindow({
-			'content': '<h3>%s</h3><' % project.title,
+			'content': '<h3>%s</h3>' % project.title,
 			'disableAutoPan': True
 		})
 		info.open(gmap, marker)
